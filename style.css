@@ -1,0 +1,322 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0 0.5rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav {
+    background: #444;
+    padding: 0.5rem 0;
+    text-align: center;
+    position: relative;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1.5rem;
+    font-weight: bold;
+    transition: color 0.2s;
+    display: inline-block;
+    position: relative;
+    top: 0;
+}
+nav a.featured {
+    position: absolute;
+    right: 2rem;
+    top: 0.5rem;
+    background: #ffd700;
+    color: #222;
+    padding: 0.3rem 1rem;
+    border-radius: 4px;
+}
+.home-section {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #e9ecef;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+.home-section h2 {
+    color: #222;
+    margin-bottom: 1rem;
+}
+.home-section p {
+    color: #444;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+.home-btns {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.home-btns a {
+    flex: 1 1 120px;
+    min-width: 120px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 0.5rem;
+    padding: 0.7rem 1.5rem;
+    background: #333;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+.home-btns a:hover {
+    background: #ffd700;
+    color: #222;
+}
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.blog-post {
+    margin-bottom: 2rem;
+}
+.blog-post h2 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+.blog-post p {
+    color: #555;
+    line-height: 1.6;
+}
+.blog-post img.float-left {
+    float: left;
+    margin: 0 1rem 1rem 0;
+    max-width: 40%;
+    border-radius: 8px;
+}
+.blog-post img.float-right {
+    float: right;
+    margin: 0 0 1rem 1rem;
+    max-width: 40%;
+    border-radius: 8px;
+}
+.blog-posts-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+.blog-posts-flex .blog-post {
+    flex: 1 1 250px;
+    min-width: 250px;
+    max-width: 48%;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    padding: 1.5rem 1rem 1rem 1rem;
+    margin-bottom: 0;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+.blog-posts-flex .blog-post:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    border-color: #ffd700;
+    z-index: 2;
+}
+.blog-posts-flex .blog-post img {
+    border-radius: 8px;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    float: none;
+    display: block;
+}
+.blog-posts-flex .blog-post h2 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    color: #222;
+}
+.blog-posts-flex .blog-post p {
+    color: #444;
+    font-size: 1.05rem;
+}
+/* Footer Styles */
+footer {
+    background: #23272f;
+    color: #fff;
+    padding: 2.5rem 0 1.2rem 0;
+    text-align: left;
+    position: relative;
+    width: 100%;
+    margin-top: 3rem;
+    border-top: 1px solid #444;
+}
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 2rem;
+}
+.footer-about,
+.footer-links,
+.footer-contact {
+    flex: 1 1 220px;
+    margin: 0 1rem 1.5rem 1rem;
+}
+.footer-about h3,
+.footer-links h3,
+.footer-contact h3 {
+    color: #ffd700;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+.footer-about p {
+    color: #ccc;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-links ul li {
+    margin-bottom: 0.7rem;
+}
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.footer-links a:hover {
+    color: #ffd700;
+}
+.footer-contact p {
+    margin: 0.3rem 0;
+    color: #ccc;
+    font-size: 1rem;
+}
+.footer-contact a {
+    color: #ffd700;
+    text-decoration: none;
+}
+.footer-social {
+    margin-top: 1rem;
+}
+.footer-social a {
+    display: inline-block;
+    margin-right: 0.7rem;
+    color: #fff;
+    font-size: 1.3rem;
+    transition: color 0.2s;
+}
+.footer-social a:hover {
+    color: #ffd700;
+}
+.footer-bottom {
+    text-align: center;
+    color: #bbb;
+    font-size: 0.98rem;
+    margin-top: 1.5rem;
+    border-top: 1px solid #333;
+    padding-top: 1rem;
+}
+/* Responsive Footer */
+@media (max-width: 900px) {
+    .footer-container {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+    .footer-about,
+    .footer-links,
+    .footer-contact {
+        margin: 0 0 1.5rem 0;
+    }
+}
+@media (max-width: 600px) {
+    .footer-container {
+        padding: 0 0.5rem;
+    }
+    .footer-about,
+    .footer-links,
+    .footer-contact {
+        font-size: 0.97rem;
+    }
+}
+@media (max-width: 480px) {
+    .footer-container {
+        padding: 0 0.2rem;
+    }
+    .footer-about,
+    .footer-links,
+    .footer-contact {
+        margin: 0 0 1rem 0;
+    }
+    .footer-bottom {
+        font-size: 0.92rem;
+    }
+}
+/* Prevent footer overlap on small screens */
+@media (max-width: 700px) {
+    body {
+        padding-bottom: 0;
+    }
+    footer {
+        position: relative;
+    }
+}
+
+/* Contact Form Styles */
+.contact-form {
+    max-width: 400px;
+    margin: 1.5rem auto 0 auto;
+    text-align: left;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 0.3rem;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+.contact-form textarea {
+    resize: vertical;
+}
+.contact-form button[type="submit"] {
+    background: #333;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.contact-form button[type="submit"]:hover {
+    background: #ffd700;
+    color: #222;
+}
